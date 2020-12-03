@@ -73,7 +73,7 @@ class Bola{
         let medioPala1 = pala1.y + pala1.largo/2;
         let medioPala2 = pala2.y + pala2.largo/2;
         
-        // Comprobar colision bola y direccion de bola para que depende donde choque la bola en la pla vaya hacia una direccion u otra
+        // Comprobar colision bola y direccion de bola para que depende donde choque la bola en la pala vaya hacia una direccion u otra
 
         if(this.comprobarColision(this.x,this.y,this.radio,pala1.x,pala1.y,pala1.ancho,pala1.largo)){
             if(this.bolaSubiendo && this.y > medioPala1)
@@ -240,6 +240,7 @@ class Juego{
     }
     
     actualizarResultado(){
+        // actualiza marcador y cambia la direccion de la bola para que vaya hacia quien ha ganado el punto
         if(this.bola.x - this.bola.radio <= 0 || this.bola.x + this.bola.radio >this.tamanoSvg.width){
             if(this.bola.x - this.bola.radio <= 0){
                 this.victoriasJugador2++;
