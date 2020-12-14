@@ -1,5 +1,7 @@
 import{Bola, Pala, Juego} from "./clases.js";
 
+var elId;
+
 function main(){
     let svg = document.getElementsByTagName('svg')[0];
     let juego = new Juego(svg);

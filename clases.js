@@ -276,6 +276,7 @@ class Juego{
     loop(){
         let juegoNuevo = document.getElementById("jugarNuevo");
         let svg = document.getElementsByTagName('svg')[0];
+        let elId;
 
         this.bola.moverBola();
         this.bola.colision(this.pala1,this.pala2);
